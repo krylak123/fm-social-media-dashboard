@@ -1,13 +1,13 @@
 :root[data-theme="dark"] {
-    --toggle-color: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --toggle-color: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 
     --bg-color: hsl(230, 17%, 14%);
     --bg-top-color: hsl(232, 19%, 15%);
 
     --card-color: hsl(228, 28%, 20%);
 
-    --text-primary-color: hsl(228, 34%, 66%);
-    --text-secondery-color: hsl(0, 0%, 100%);
+    --text-primary-color: hsl(0, 0%, 100%);
+    --text-secondery-color: hsl(228, 34%, 66%);
 }
 
 :root[data-theme="light"] {
@@ -18,8 +18,8 @@
 
     --card-color: hsl(227, 47%, 96%);
 
-    --text-primary-color: hsl(228, 12%, 44%);
-    --text-secondery-color: hsl(230, 17%, 14%);
+    --text-primary-color: hsl(230, 17%, 14%);
+    --text-secondery-color: hsl(228, 12%, 44%);
 }
 
 $lime-green: hsl(163, 72%, 41%);
