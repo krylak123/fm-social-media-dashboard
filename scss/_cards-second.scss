@@ -1,0 +1,54 @@
+.cards-second {
+
+    &__title {
+        margin-bottom: 10px;
+        color: var(--text-primary-color);
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        margin-bottom: 15px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: var(--card-color);
+    }
+
+    &__name {
+        color: var(--text-secondery-color);
+        font-weight: bold;
+    }
+
+    &__icon {
+        justify-self: end;
+    }
+
+    &__number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--text-primary-color);
+    }
+
+    &__wrap-change {
+        justify-self: end;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__arrow {
+        padding: 6px 4px;
+    }
+
+}
+
+.increase .cards-second__wrap-change p {
+    font-weight: bold;
+    color: $lime-green;
+}
+
+.decrease .cards-second__wrap-change p {
+    font-weight: bold;
+    color: $bright-red;
+}
