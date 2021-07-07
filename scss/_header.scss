@@ -66,4 +66,30 @@
             transform: translate(130%, -50%);
         }
     }
+
+    @media screen and (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__wrap-title {
+            padding-bottom: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__wrap-toggle {
+            align-self: center;
+            padding-top: 0;
+        }
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__label {
+            margin-right: 10px;
+        }
+    }
 }

@@ -10,6 +10,8 @@
         border-radius: 5px;
         background-color: var(--card-color);
         overflow: hidden;
+        transition: .2s;
+        cursor: pointer;
 
         &::before {
             content: '';
@@ -61,6 +63,12 @@
     &__arrow {
         padding: 8px 4px;
     }
+
+    @media screen and (min-width: 1440px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
 }
 
 .increase .cards-first__wrap-change p {
@@ -71,4 +79,12 @@
 .decrease .cards-first__wrap-change p {
     font-weight: bold;
     color: $bright-red;
+}
+
+[data-theme="dark"] .cards-first__card:hover {
+    background-color: lighten($color: hsl(228, 28%, 20%), $amount: 5%);
+}
+
+[data-theme="light"] .cards-first__card:hover {
+    background-color: darken($color: hsl(227, 47%, 96%), $amount: 5%);
 }
